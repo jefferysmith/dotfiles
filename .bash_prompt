@@ -1,0 +1,15 @@
+# Load git __git_ps1 function to enable custom git prompt
+# - when using homebrew, git-prompt.sh is symlinked to current git install
+[ -f /usr/local/etc/bash_completion.d/git-prompt.sh ] && source /usr/local/etc/bash_completion.d/git-prompt.sh
+
+# Show git staged and unstaged changes
+export GIT_PS1_SHOWDIRTYSTATE=1
+# Show git untracked files
+export GIT_PS1_SHOWUNTRACKEDFILES=1
+
+# Prompt
+export PS1='\u@\h:\e[0;2;37m\]\w\[\e[0;33m\]$(__git_ps1 " (%s)")\[\e[0;2;37m\]
+\$\[\e[0m\] '
+
+# Root prompt
+export SUDO_PS1="\[\e[33;1;41m\][\u] \w \$\[\e[0m\] "

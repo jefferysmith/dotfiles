@@ -1,0 +1,2 @@
+# Homebrew symlinks to installed apps
+export PATH=/usr/local/bin:$PATH

@@ -1,0 +1,11 @@
+[core]
+        excludesfile = ~/.gitignore
+[alias]
+        # shortcut for status command
+        st = status
+        # show log for last commit
+        last = log -1 HEAD
+        # shortcut for checkout command
+        co = checkout
+        # list branches with date information
+        branchdate = !git "for-each-ref --sort='-authordate' --format='%1B[0;34m%(authordate)%09%1B[m%(refname)'" refs/heads | sed -e 's-refs/heads/--'
