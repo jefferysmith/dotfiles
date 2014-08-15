@@ -40,5 +40,6 @@ Thumbs.db
 #######
 .vagrant
 *.iml
+.idea
 node_modules
 target
