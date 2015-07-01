@@ -11,3 +11,5 @@
     ms = merge --squash
     # list branches with date information
     branchdate = !git "for-each-ref --sort='-authordate' --format='%1B[0;34m%(authordate)%09%1B[m%(refname)'" refs/heads | sed -e 's-refs/heads/--'
+    # show branch graph
+    bg = log --oneline --abbrev-commit --all --graph --decorate --color
