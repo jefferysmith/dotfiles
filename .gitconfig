@@ -5,6 +5,8 @@
     st = status
     # show log for last commit
     last = log -1 HEAD
+    # short log format
+    ll = log --oneline --decorate
     # shortcut for checkout command
     co = checkout
     # shortcut for merge squash
